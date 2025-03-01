@@ -65,20 +65,19 @@ function MySkills() {
             </div>
 
             <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
+              <i className="fa-brands fa-github text-purple-500 text-7xl  "></i>
+            </div>
+
+            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
+              <i className="fa-brands fa-java text-purple-500 text-7xl  "></i>
+            </div>
+
+            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
               <i class="devicon-photoshop-plain text-7xl text-purple-500"></i>
             </div>
 
             <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
               <i class="devicon-illustrator-plain text-7xl text-purple-500"></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i className="fa-brands fa-github text-purple-500 text-7xl  "></i>
-            </div>
-
-            {/* Figma */}
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i className="fa-brands fa-java text-purple-500 text-7xl  "></i>
             </div>
           </div>
         </div>

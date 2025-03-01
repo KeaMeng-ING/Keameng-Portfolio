@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="min-h-screen bg-black px-20 py-2 flex items-center justify-center">
       <div className="grid grid-cols-2 ">
-        <div className="relative z-10 w-100 h-120 overflow-hidden border-1 rounded-2xl border-purple-500 flex justify-center items-center bg-gray-900 hover:scale-120 duration-500">
+        <div className="relative z-10 w-100 h-120 overflow-hidden border-1 rounded-2xl border-purple-500 flex justify-center items-center bg-gray-900 hover:scale-120 duration-500 transition">
           {/* Placeholder for image */}
           <img
             src={profile2}

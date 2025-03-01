@@ -3,6 +3,8 @@ import LandingPage from "./components/LandingPage.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import MySkills from "./components/MySkills.jsx";
 import ExperienceAndEducation from "./components/ExperienceAndEducation.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <AboutMe />
       <MySkills />
       <ExperienceAndEducation />
+      <Projects />
+      <Contact />
     </>
   );
 }

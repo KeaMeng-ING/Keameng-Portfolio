@@ -6,16 +6,30 @@ import ExperienceAndEducation from "./components/ExperienceAndEducation.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import CircularNavigation from "./components/CircularNavigation.jsx";
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <AboutMe />
-      <MySkills />
-      <ExperienceAndEducation />
-      <Projects />
-      <Contact />
+      <CircularNavigation />
+      <section id="landing">
+        <LandingPage />
+      </section>
+      <section id="about">
+        <AboutMe />
+      </section>
+      <section id="skills">
+        <MySkills />
+      </section>
+      <section id="experience">
+        <ExperienceAndEducation />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </>
   );

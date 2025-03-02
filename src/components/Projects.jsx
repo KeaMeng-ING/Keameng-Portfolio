@@ -1,11 +1,26 @@
-import test from "../assets/test.jpg";
+import LookGreat from "../assets/LookGreat.png";
+import WriteLetter from "../assets/WriteLetter.png";
+import MemoryGame from "../assets/MemoryGame.png";
 
-function ProjectWithImageLeft({ title, description, image, tech }) {
+function ProjectWithImageLeft({ title, description, image, tech, link }) {
   return (
     <div className="flex gap-10 mt-20 items-center justify-center xl:px-10">
-      <img src={image} alt="" className="w-full h-70 mr-5 rounded-xl" />
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="w-full hover:scale-105 transition-transform duration-300"
+      >
+        <img src={image} alt="" className="w-full h-70 mr-5 rounded-xl" />
+      </a>
+
       <div>
-        <h1 className="text-white text-3xl font-bold mb-7">{title}</h1>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h1 className="text-white text-3xl font-bold mb-7 hover:text-purple-500">
+            {title}
+          </h1>
+        </a>
+
         <p className="text-gray-400 mb-7">{description}</p>
         <div className="mt-5">
           <i className="fa-solid fa-code text-purple-500 mr-5"></i>
@@ -23,11 +38,15 @@ function ProjectWithImageLeft({ title, description, image, tech }) {
   );
 }
 
-function ProjectWithImageRight({ title, description, image, tech }) {
+function ProjectWithImageRight({ title, description, image, tech, link }) {
   return (
     <div className="flex gap-10 mt-20 items-center justify-center xl:px-10">
       <div>
-        <h1 className="text-white text-3xl font-bold mb-7">{title}</h1>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h1 className="text-white text-3xl font-bold mb-7 hover:text-purple-500">
+            {title}
+          </h1>
+        </a>
         <p className="text-gray-400 mb-7">{description}</p>
         <div className="mt-5">
           <i className="fa-solid fa-code text-purple-500 mr-5"></i>
@@ -41,7 +60,12 @@ function ProjectWithImageRight({ title, description, image, tech }) {
           ))}
         </div>
       </div>
-      <img src={image} alt="" className="w-full h-70 mr-5 rounded-xl" />
+      <a
+        href={link}
+        className="w-full hover:scale-105 transition-transform duration-300"
+      >
+        <img src={image} alt="" className="w-full h-70 mr-5 rounded-xl" />
+      </a>
     </div>
   );
 }
@@ -56,23 +80,26 @@ function Projects() {
 
         <div className="flex flex-col gap-7 mt-10">
           <ProjectWithImageLeft
-            title="Name Project"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro nemo error tempore accusamus eum minus cupiditate facilis. Repudiandae ipsam maxime reiciendis reprehenderit vero molestias fugiat suscipit aspernatur numquam possimus."
-            image={test}
-            tech={["React", "React", "React"]}
+            title="Look Great V2"
+            description="An e-commerce website built as part of The Odin Project curriculum. This project is a modern, responsive, and fully functional e-commerce platform designed to showcase my brand, LookGreat. It includes features like product browsing, a shopping cart, checkout, and more.
+"
+            image={LookGreat}
+            link="https://e-commerce-kea-meng.netlify.app/"
+            tech={["React", "Tailwind", "API"]}
           />
 
           <ProjectWithImageRight
-            title="Name Project"
+            title="Member Only"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro nemo error tempore accusamus eum minus cupiditate facilis. Repudiandae ipsam maxime reiciendis reprehenderit vero molestias fugiat suscipit aspernatur numquam possimus."
-            image={test}
+            image={WriteLetter}
             tech={["React", "React", "React"]}
           />
 
           <ProjectWithImageLeft
-            title="Name Project"
+            title="Memory Game"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro nemo error tempore accusamus eum minus cupiditate facilis. Repudiandae ipsam maxime reiciendis reprehenderit vero molestias fugiat suscipit aspernatur numquam possimus."
-            image={test}
+            image={MemoryGame}
+            link="#"
             tech={["React", "React", "React"]}
           />
         </div>

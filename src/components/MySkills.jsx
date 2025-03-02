@@ -36,7 +36,7 @@ function MySkills() {
               Experience
             </p>
             <p className="text-2xl text-purple-500 text-center mb-8">
-              Learning
+              in Web Development
             </p>
           </div>
 

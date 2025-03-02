@@ -22,16 +22,22 @@ function AboutMe() {
             Who Am I
           </h1>
           <p className="text-white xl:w-12/12 mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            maiores dolorem nobis nisi molestiae. Ratione, quia rerum quaerat,
-            blanditiis ipsum qui mollitia repellat dolorum beatae numquam nemo
-            rem est placeat! Odit blanditiis ad deleniti. Ullam quibusdam eaque
-            possimus amet, commodi a dolore, tempore repellendus veniam rerum
-            quidem at consequatur pariatur dolor aliquid neque odit animi ad
-            itaque! Tenetur, voluptate suscipit. Magni voluptatem illum enim
-            beatae, quos voluptates, vero nemo, impedit quidem iste nobis unde
-            vel corporis quo hic nisi blanditiis tempora nulla perspiciatis
-            reiciendis quaerat officiis repellendus saepe illo? Corrupti.
+            Hi! My name is <strong>Ing Kea Meng</strong> , currently a junior
+            student majoring in Software Development at American University of
+            Phnom Penh. With a strong passion for Web Development, I am
+            currently seeking an <strong>internship opportunity</strong> to
+            apply my skills, gain hands-on experience, and contribute to
+            real-world projects.
+            <br />
+            <br />I have experience in building responsive web applications,
+            working with <strong>modern front-end</strong> and{" "}
+            <strong>back-end technologies</strong>, and{" "}
+            <strong>designing user-friendly interfaces</strong>. Beyond
+            development, I actively participate in{" "}
+            <strong>
+              hackathons, innovation challenges, and tech communities
+            </strong>
+            , continuously expanding my knowledge in technology field.
           </p>
           <button className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-500 border-purple-400 border-2 rounded-full px-10 py-2 mt-5 hover:text-white transition duration-300">
             Download CV

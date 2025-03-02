@@ -23,7 +23,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className=" text-gray-400 text-gray-400 hover:text-purple-400 transition-colors"
+                  className="  text-gray-400 hover:text-purple-400 transition-colors"
                 >
                   Home
                 </a>

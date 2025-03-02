@@ -1,3 +1,19 @@
+function SkillCard({ icon }) {
+  return (
+    <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
+      <i className={`${icon} text-purple-500 text-9xl`}></i>
+    </div>
+  );
+}
+
+function AdditionalSkillCard({ icon }) {
+  return (
+    <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
+      <i className={`${icon} text-purple-500 text-7xl`}></i>
+    </div>
+  );
+}
+
 function MySkills() {
   return (
     <div className="min-h-screen bg-black px-20 py-5 flex justify-center xl:mt-20">
@@ -7,18 +23,10 @@ function MySkills() {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-20">
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-html5 text-purple-500 text-9xl  "></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-css3-alt text-purple-500 text-9xl  "></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-js text-purple-500 text-9xl  "></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-node text-purple-500 text-9xl  "></i>
-          </div>
+          <SkillCard icon="fa-brands fa-html5" />
+          <SkillCard icon="fa-brands fa-css3-alt" />
+          <SkillCard icon="fa-brands fa-js" />
+          <SkillCard icon="fa-brands fa-node" />
 
           {/* Experience Card */}
           <div className="bg-[#1a1e31] rounded-lg p-8 flex flex-col justify-center items-center row-span-2">
@@ -32,18 +40,10 @@ function MySkills() {
             </p>
           </div>
 
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-react text-purple-500 text-9xl  "></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i class="devicon-tailwindcss-original text-9xl text-purple-500"></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i className="fa-brands fa-python text-purple-500 text-9xl  "></i>
-          </div>
-          <div className="bg-[#1a1e31] rounded-lg p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-            <i class="devicon-django-plain-wordmark text-9xl text-purple-500"></i>
-          </div>
+          <SkillCard icon="fa-brands fa-react" />
+          <SkillCard icon="devicon-tailwindcss-original" />
+          <SkillCard icon="fa-brands fa-python" />
+          <SkillCard icon="devicon-django-plain-wordmark" />
         </div>
 
         <div className="bg-[#1a1e31] rounded-lg p-10 mt-16">
@@ -52,33 +52,13 @@ function MySkills() {
           </h2>
 
           <div className="flex flex-wrap justify-center gap-12">
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i className="fa-brands fa-figma text-purple-500 text-7xl  "></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i class="devicon-postgresql-plain text-7xl text-purple-500"></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i class="devicon-azuresqldatabase-plain  text-7xl text-purple-500"></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i className="fa-brands fa-github text-purple-500 text-7xl  "></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i className="fa-brands fa-java text-purple-500 text-7xl  "></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i class="devicon-photoshop-plain text-7xl text-purple-500"></i>
-            </div>
-
-            <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-              <i class="devicon-illustrator-plain text-7xl text-purple-500"></i>
-            </div>
+            <AdditionalSkillCard icon="fa-brands fa-figma" />
+            <AdditionalSkillCard icon="devicon-postgresql-plain" />
+            <AdditionalSkillCard icon="devicon-azuresqldatabase-plain" />
+            <AdditionalSkillCard icon="fa-brands fa-github" />
+            <AdditionalSkillCard icon="fa-brands fa-java" />
+            <AdditionalSkillCard icon="devicon-photoshop-plain" />
+            <AdditionalSkillCard icon="devicon-illustrator-plain" />
           </div>
         </div>
       </div>

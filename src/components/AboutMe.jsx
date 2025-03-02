@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="min-h-screen bg-black px-20 py-2 flex items-center justify-center">
       <div className="grid grid-cols-2 ">
-        <div className="relative z-10 w-100 h-120 overflow-hidden border-1 rounded-2xl border-purple-500 flex justify-center items-center bg-gray-900 hover:scale-120 duration-500 transition">
+        <div className="relative z-10 w-100 h-120 overflow-hidden border-1 rounded-2xl border-purple-500 flex justify-center items-center bg-gray-900 hover:scale-120 duration-500 transition xl:ml-20">
           {/* Placeholder for image */}
           <img
             src={profile2}
@@ -21,7 +21,7 @@ function AboutMe() {
           <h1 className=" text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
             Who Am I
           </h1>
-          <p className="text-white xl:w-4xl mt-5">
+          <p className="text-white xl:w-12/12 mt-5 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             maiores dolorem nobis nisi molestiae. Ratione, quia rerum quaerat,
             blanditiis ipsum qui mollitia repellat dolorum beatae numquam nemo

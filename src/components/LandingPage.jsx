@@ -14,10 +14,10 @@ function LandingPage() {
             <h1 className="text-5xl font-bold mb-5 text-white">
               I am Kea Meng!
             </h1>
-            <h1 className="text-8xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
+            <h1 className="text-8xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 xl:text-7xl">
               A Web Developer
             </h1>
-            <p className="text-white">
+            <p className="text-white xl:w-9/12">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               exercitationem sapiente ea voluptatum vitae, iste consectetur
               tempora reprehenderit necessitatibus eos eligendi dolor voluptate

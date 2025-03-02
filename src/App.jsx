@@ -5,6 +5,7 @@ import MySkills from "./components/MySkills.jsx";
 import ExperienceAndEducation from "./components/ExperienceAndEducation.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ExperienceAndEducation />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

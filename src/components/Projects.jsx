@@ -1,4 +1,4 @@
-import LookGreat from "../assets/LookGreat.png";
+import LookGreat from "../assets/lookgreat.png";
 import WriteLetter from "../assets/WriteLetter.png";
 import MemoryGame from "../assets/MemoryGame.png";
 

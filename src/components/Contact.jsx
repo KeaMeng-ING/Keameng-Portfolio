@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import contact from "../assets/contact.svg";
 
 function Contact() {
@@ -31,20 +33,24 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="min-h-screen bg-black px-20 mt-20 pt-5 flex items-center"
+      className="min-h-screen bg-black px-4 sm:px-8 md:px-12 lg:px-20 py-10 lg:py-20 flex items-center"
     >
-      <div className="w-full">
-        <h1 className="text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
+      <div className="w-full max-w-7xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
           Contact Me
         </h1>
-        <p className="text-xl text-gray-400 mt-6 text-center">
+        <p className="text-lg sm:text-xl text-gray-400 mt-4 sm:mt-6 text-center">
           Let's connect and create something amazing together!
         </p>
 
-        <div className="flex mt-10 gap-20 items-center w-full">
-          <img src={contact} alt="" className="w-120 xl:w-6/12" />
-          <div className="bg-gray-900/50 p-8 rounded-lg shadow-lg border border-purple-500/20">
-            <h2 className="text-2xl font-bold mb-6 text-purple-400">
+        <div className="flex flex-col lg:flex-row mt-10 lg:mt-10 gap-10 lg:gap-20 items-center w-full">
+          <img
+            src={contact || "/placeholder.svg"}
+            alt="Contact illustration"
+            className="w-full lg:w-6/12 mx-auto lg:mx-0"
+          />
+          <div className="bg-gray-900/50 p-6 sm:p-8 rounded-lg shadow-lg border border-purple-500/20 w-full lg:w-7/12">
+            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-purple-400">
               Send a Message
             </h2>
             <form onSubmit={handleSubmit}>
@@ -61,7 +67,7 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-3  text-white py-2 pr-20 xl:pr-80 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
                   required
                 />
               </div>
@@ -79,7 +85,7 @@ function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700  text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                   required
                 />
               </div>
@@ -96,7 +102,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white h-32"
                   required
                 ></textarea>
               </div>

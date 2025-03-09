@@ -1,6 +1,9 @@
 function CardExperience({ date, title, company }) {
   return (
-    <div className="bg-[#1a1e31] rounded-lg p-4 sm:p-6 md:p-8 flex flex-col hover:shadow-lg hover:shadow-purple-500 transition-all duration-300 mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+    <div
+      className="bg-[#1a1e31] rounded-lg p-4 sm:p-6 md:p-8 flex flex-col hover:shadow-lg hover:shadow-purple-500 transition-all duration-300 mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+      data-aos="fade-left"
+    >
       <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
         {date}
       </p>

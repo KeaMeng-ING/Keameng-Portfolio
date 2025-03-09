@@ -10,9 +10,13 @@ function AboutMe() {
             src={profile2 || "/placeholder.svg"}
             alt="Profile"
             className="w-full h-full object-cover"
+            data-aos="zoom-in"
           />
         </div>
-        <div className="flex flex-col justify-center md:order-2 order-2">
+        <div
+          className="flex flex-col justify-center md:order-2 order-2"
+          data-aos="flip-left"
+        >
           <div className="flex items-center mb-4">
             <i className="fa-solid fa-chevron-right text-purple-500"></i>
             <p className="inline text-white ml-2 text-lg md:text-xl font-bold">

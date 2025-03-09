@@ -1,6 +1,6 @@
-"use client";
-
 import { useState } from "react";
+import emailjs from "emailjs-com";
+
 import contact from "../assets/contact.svg";
 
 function Contact() {
@@ -20,20 +20,35 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log("Form submitted:", result.text);
+          // Reset form
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Error submitting form:", error.text);
+        }
+      );
   };
 
   return (
     <div
       id="contact"
       className="min-h-screen bg-black px-4 sm:px-8 md:px-12 lg:px-20 py-10 lg:py-20 flex items-center"
+      data-aos="zoom-in-up"
     >
       <div className="w-full max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600">
@@ -109,7 +124,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded-md hover:from-purple-600 hover:to-pink-600 transition duration-300 flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded-md hover:from-purple-600 hover:to-pink-600 transition duration-300 flex items-center justify-center cursor-pointer"
               >
                 Send Message
               </button>

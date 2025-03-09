@@ -14,10 +14,13 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@tailwindcss/vite": "^4.0.9",
     "@vercel/analytics": "^1.5.0",
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.477.0",
     "react": "^19.0.0",
@@ -36,6 +39,10 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
+    "react-error-overlay": "^6.0.9",
     "vite": "^6.2.0"
+  },
+  "overrides": {
+    "react-error-overlay": "6.0.9"
   }
 }

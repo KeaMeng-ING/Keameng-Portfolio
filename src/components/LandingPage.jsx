@@ -34,7 +34,10 @@ function LandingPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 items-center">
           {/* Left side */}
-          <div className="text-center md:text-left xl:w-4xl">
+          <div
+            className="text-center md:text-left xl:w-4xl"
+            data-aos="zoom-in-up"
+          >
             <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-5 text-white">
               I am Kea Meng!
             </h1>
@@ -88,6 +91,7 @@ function LandingPage() {
                 src={profile || "/placeholder.svg"}
                 alt="Profile"
                 className="w-full h-full object-cover"
+                data-aos="zoom-in"
               />
             </div>
           </div>

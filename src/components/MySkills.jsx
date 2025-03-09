@@ -26,7 +26,10 @@ function MySkills() {
           My Skills
         </h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-12 md:mt-16 lg:mt-20"
+          data-aos="zoom-in-down"
+        >
           <SkillCard icon="fa-brands fa-html5" />
           <SkillCard icon="fa-brands fa-css3-alt" />
           <SkillCard icon="fa-brands fa-js" />
@@ -54,7 +57,10 @@ function MySkills() {
           <SkillCard icon="devicon-django-plain-wordmark" />
         </div>
 
-        <div className="bg-[#1a1e31] rounded-lg p-5 sm:p-8 md:p-10 mt-8 sm:mt-12 md:mt-16">
+        <div
+          className="bg-[#1a1e31] rounded-lg p-5 sm:p-8 md:p-10 mt-8 sm:mt-12 md:mt-16"
+          data-aos="zoom-in-down"
+        >
           <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 mb-5 sm:mb-8 md:mb-10">
             Additional Skills
           </h2>

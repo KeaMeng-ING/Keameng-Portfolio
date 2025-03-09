@@ -11,7 +11,10 @@ function ProjectCard({
   imageOnLeft = true,
 }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 mt-10 lg:mt-20 items-center justify-center">
+    <div
+      className="flex flex-col lg:flex-row gap-6 lg:gap-10 mt-10 lg:mt-20 items-center justify-center"
+      data-aos="fade-right"
+    >
       <a
         href={link}
         target="_blank"
@@ -71,19 +74,19 @@ function Projects() {
           />
 
           <ProjectCard
-            title="Member Only"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro nemo error tempore accusamus eum minus cupiditate facilis. Repudiandae ipsam maxime reiciendis reprehenderit vero molestias fugiat suscipit aspernatur numquam possimus."
+            title="Member Only (To be deployed soon)"
+            description="A web application that allows users to post anonymous messages while granting access only to those with a secret code. Once authenticated, users can view messages along with the sender's identity and timestamp. Built using Node.js, React, and PostgreSQL, this platform ensures secure data handling, seamless interactions, and an intuitive user experience."
             image={WriteLetter}
-            tech={["React", "React", "React"]}
+            tech={["Node JS", "Tailwind CSS", "PostgreSQL"]}
             imageOnLeft={false}
           />
 
           <ProjectCard
             title="Memory Game"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro nemo error tempore accusamus eum minus cupiditate facilis. Repudiandae ipsam maxime reiciendis reprehenderit vero molestias fugiat suscipit aspernatur numquam possimus."
+            description="A fun and interactive challenge where players must click on unique Pokémon cards without selecting the same one twice. Each correct selection increases the score, while clicking a previously chosen card resets the game. The goal is to achieve the highest possible score by remembering and avoiding duplicate selections."
             image={MemoryGame}
-            link="#"
-            tech={["React", "React", "React"]}
+            link="https://memorygame-keameng.netlify.app/"
+            tech={["React", "Tailwind CSS"]}
           />
         </div>
       </div>

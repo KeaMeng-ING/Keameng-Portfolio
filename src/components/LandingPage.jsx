@@ -26,7 +26,7 @@ function LandingPage() {
   });
 
   return (
-    <div className="relative min-h-screen bg-black flex overflow-hidden items-center px-4 sm:px-8 md:px-12 lg:px-20 justify-center">
+    <div className="relative min-h-screen bg-black flex overflow-x-hidden items-center px-4 sm:px-8 md:px-12 lg:px-20 justify-center">
       <div>
         {/* Purple glow effect */}
         <div className="absolute w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-purple-600 rounded-full opacity-20 filter blur-3xl top-2"></div>

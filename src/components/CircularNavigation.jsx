@@ -17,18 +17,25 @@ const CircularNavigation = () => {
       { id: "contact", element: document.getElementById("contact") },
     ];
 
+    // Lower threshold to ensure sections are detected more easily
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.6,
+      threshold: 0.3, // Reduced from 0.6 to 0.3
     };
 
     const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
+      // Find the most visible section
+      const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+
+      if (visibleEntries.length > 0) {
+        // If multiple sections are visible, use the one with the highest intersection ratio
+        const mostVisible = visibleEntries.reduce((prev, current) =>
+          prev.intersectionRatio > current.intersectionRatio ? prev : current
+        );
+
+        setActiveSection(mostVisible.target.id);
+      }
     };
 
     const observer = new IntersectionObserver(
@@ -36,8 +43,14 @@ const CircularNavigation = () => {
       observerOptions
     );
 
-    sections.forEach(({ element }) => {
-      if (element) observer.observe(element);
+    // Log which sections are being observed (helpful for debugging)
+    sections.forEach(({ id, element }) => {
+      if (element) {
+        observer.observe(element);
+        console.log(`Observing section: ${id}`);
+      } else {
+        console.warn(`Section element not found: ${id}`);
+      }
     });
 
     return () => {
@@ -45,7 +58,7 @@ const CircularNavigation = () => {
         if (element) observer.unobserve(element);
       });
     };
-  }, []);
+  }, []); // Empty dependency array ensures this runs once on mount
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);

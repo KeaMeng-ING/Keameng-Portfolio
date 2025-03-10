@@ -114,8 +114,8 @@ const CircularNavigation = () => {
       >
         <ul
           className={`
-          md:flex md:flex-col md:items-end md:gap-6
-          flex flex-row flex-wrap justify-center gap-4 px-4
+          md:flex  md:items-end md:gap-6
+          flex flex-row flex-wrap justify-end  gap-4 px-4
         `}
         >
           {navItems.map((item) => (

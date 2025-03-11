@@ -1,26 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import profile2 from "../assets/profile2.jpg";
-import resume from "../assets/KeaMengResume.pdf";
+// import resume from "../assets/KeaMengResume.pdf";
 
 function AboutMe() {
-  const [isDownloading, setIsDownloading] = useState(false);
+  // const [isDownloading, setIsDownloading] = useState(false);
 
-  const handleDownloadCV = () => {
-    setIsDownloading(true);
+  // const handleDownloadCV = () => {
+  //   setIsDownloading(true);
 
-    const link = document.createElement("a");
-    link.href = resume;
-    link.setAttribute("download", "KeaMengResume.pdf");
-    document.body.appendChild(link);
+  //   const link = document.createElement("a");
+  //   link.href = resume;
+  //   link.setAttribute("download", "KeaMengResume.pdf");
+  //   document.body.appendChild(link);
 
-    link.click();
+  //   link.click();
 
-    document.body.removeChild(link);
+  //   document.body.removeChild(link);
 
-    setTimeout(() => {
-      setIsDownloading(false);
-    }, 1000);
-  };
+  //   setTimeout(() => {
+  //     setIsDownloading(false);
+  //   }, 1000);
+  // };
 
   return (
     <div className="min-h-screen bg-black px-4 sm:px-8 md:px-12 lg:px-20 py-2 flex items-center justify-center">
@@ -65,7 +65,7 @@ function AboutMe() {
             </strong>
             , continuously expanding my knowledge in technology field.
           </p>
-          <button
+          {/* <button
             onClick={handleDownloadCV}
             disabled={isDownloading}
             className={`relative text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-500 border-purple-400 border-2 rounded-full px-8 py-2 mt-5 self-start hover:text-white transition duration-300 ${
@@ -103,7 +103,7 @@ function AboutMe() {
             ) : (
               "Download CV"
             )}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

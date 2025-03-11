@@ -74,11 +74,12 @@ function Projects() {
           />
 
           <ProjectCard
-            title="Member Only (To be deployed soon)"
+            title="Member Only"
             description="A web application that allows users to post anonymous messages while granting access only to those with a secret code. Once authenticated, users can view messages along with the sender's identity and timestamp. Built using Node.js, React, and PostgreSQL, this platform ensures secure data handling, seamless interactions, and an intuitive user experience."
             image={WriteLetter}
             tech={["Node JS", "Tailwind CSS", "PostgreSQL"]}
             imageOnLeft={false}
+            link="https://memberonly.onrender.com"
           />
 
           <ProjectCard

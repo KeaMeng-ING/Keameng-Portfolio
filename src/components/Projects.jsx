@@ -1,5 +1,5 @@
 import LookGreat from "../assets/lookgreat.png";
-import WriteLetter from "../assets/WriteLetter.png";
+import Blog from "../assets/blog.png";
 import MemoryGame from "../assets/MemoryGame.png";
 
 function ProjectCard({
@@ -74,12 +74,12 @@ function Projects() {
           />
 
           <ProjectCard
-            title="Member Only"
-            description="A web application that allows users to post anonymous messages while granting access only to those with a secret code. Once authenticated, users can view messages along with the sender's identity and timestamp. Built using Node.js, React, and PostgreSQL, this platform ensures secure data handling, seamless interactions, and an intuitive user experience."
-            image={WriteLetter}
-            tech={["Node JS", "Tailwind CSS", "PostgreSQL"]}
+            title="Blog Application"
+            description="A blog application that allows users to create, read, update, and delete blog posts. It features user authentication, a responsive design, and a clean user interface. The application is built using Node.js, Express, React, and PostgreSQL."
+            image={Blog}
+            tech={["Node JS", "React JS", "Tailwind CSS", "PostgreSQL"]}
             imageOnLeft={false}
-            link="https://memberonly.onrender.com"
+            link="https://blog-frontend-react-one.vercel.app/"
           />
 
           <ProjectCard

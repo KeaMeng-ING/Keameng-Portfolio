@@ -1,5 +1,6 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import profile from "../assets/profile.jpeg";
+import { useEffect, useState } from "react";
 
 function ContactIcon({ icon, link }) {
   return (
@@ -12,6 +13,29 @@ function ContactIcon({ icon, link }) {
 }
 
 function LandingPage() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+
+  // Track mouse position
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    const handleMouseEnter = () => setIsHovering(true);
+    const handleMouseLeave = () => setIsHovering(false);
+
+    window.addEventListener("mousemove", handleMouseMove);
+    document.body.addEventListener("mouseenter", handleMouseEnter);
+    document.body.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      document.body.removeEventListener("mouseenter", handleMouseEnter);
+      document.body.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   const [text] = useTypewriter({
     words: [
       "A Web Developer",
@@ -27,6 +51,40 @@ function LandingPage() {
 
   return (
     <div className="relative min-h-screen bg-black flex overflow-x-hidden items-center px-4 sm:px-8 md:px-12 lg:px-20 justify-center">
+      {/* Cursor follower */}
+      <div
+        className="fixed w-64 h-64 rounded-full pointer-events-none transition-transform duration-100 ease-out"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(147, 51, 234, 0.3) 0%, rgba(0, 0, 0, 0) 70%)",
+          transform: `translate(${mousePosition.x - 128}px, ${
+            mousePosition.y - 128
+          }px)`,
+          opacity: isHovering ? 1 : 0.7,
+          zIndex: 0,
+          left: 0,
+          top: 0,
+          right: 0,
+        }}
+      />
+
+      {/* Smaller, more intense cursor follower */}
+      <div
+        className="fixed w-24 h-24 rounded-full pointer-events-none transition-transform duration-75 ease-out"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(168, 85, 247, 0.5) 0%, rgba(0, 0, 0, 0) 70%)",
+          transform: `translate(${mousePosition.x - 48}px, ${
+            mousePosition.y - 48
+          }px)`,
+          opacity: isHovering ? 1 : 0.8,
+          zIndex: 0,
+          left: 0,
+          top: 0,
+          right: 0,
+        }}
+      />
+
       <div>
         {/* Purple glow effect */}
         <div className="absolute w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-purple-600 rounded-full opacity-20 filter blur-3xl top-2"></div>

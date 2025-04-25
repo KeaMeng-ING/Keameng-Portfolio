@@ -47,7 +47,7 @@ function AboutMe() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 mb-4">
             Who Am I
           </h1>
-          <p className="text-white text-sm md:text-base mt-3 md:mt-5">
+          <p className="text-white text-sm md:text-base mt-3 md:mt-5 leading-7">
             Hi! My name is <strong>Ing Kea Meng</strong>, currently a junior
             student majoring in Software Development at American University of
             Phnom Penh. With a strong passion for Web Development, I am

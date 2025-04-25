@@ -79,7 +79,7 @@ function Projects() {
             image={Blog}
             tech={["Node JS", "React JS", "Tailwind CSS", "PostgreSQL"]}
             imageOnLeft={false}
-            link="https://blog-frontend-react-one.vercel.app/"
+            link="https://keamengblog.netlify.app/"
           />
 
           <ProjectCard

@@ -9,7 +9,7 @@ function SkillCard({ link }) {
 function AdditionalSkillCard({ link }) {
   return (
     <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-      <img src={link} className="w-10 md:w-25" />
+      <img src={link} className="w-12 md:w-25" />
     </div>
   );
 }

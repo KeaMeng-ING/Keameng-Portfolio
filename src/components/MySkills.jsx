@@ -1,7 +1,7 @@
 function SkillCard({ link }) {
   return (
     <div className="bg-[#1a1e31] rounded-lg p-4 sm:p-6 md:p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-      <img src={link} className="w-35" />
+      <img src={link} className="w-15 md:w-35" />
     </div>
   );
 }
@@ -9,7 +9,7 @@ function SkillCard({ link }) {
 function AdditionalSkillCard({ link }) {
   return (
     <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-      <img src={link} className="w-25" />
+      <img src={link} className="w-10 md:w-25" />
     </div>
   );
 }

@@ -1,19 +1,15 @@
-function SkillCard({ icon }) {
+function SkillCard({ link }) {
   return (
     <div className="bg-[#1a1e31] rounded-lg p-4 sm:p-6 md:p-8 flex justify-center items-center hover:shadow-lg hover:shadow-purple-500 transition-all duration-300">
-      <i
-        className={`${icon} text-purple-500 text-5xl sm:text-7xl md:text-8xl lg:text-9xl`}
-      ></i>
+      <img src={link} className="w-35" />
     </div>
   );
 }
 
-function AdditionalSkillCard({ icon }) {
+function AdditionalSkillCard({ link }) {
   return (
     <div className="flex justify-center items-center hover:scale-110 transition-transform duration-300">
-      <i
-        className={`${icon} text-purple-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl`}
-      ></i>
+      <img src={link} className="w-25" />
     </div>
   );
 }
@@ -30,10 +26,10 @@ function MySkills() {
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-12 md:mt-16 lg:mt-20"
           data-aos="zoom-in-down"
         >
-          <SkillCard icon="fa-brands fa-html5" />
-          <SkillCard icon="fa-brands fa-css3-alt" />
-          <SkillCard icon="fa-brands fa-js" />
-          <SkillCard icon="fa-brands fa-node" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
 
           {/* Experience Card */}
           <div className="bg-[#1a1e31] rounded-lg p-4 sm:p-6 md:p-8 flex flex-col justify-center items-center col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-1 lg:row-span-2 order-last lg:order-none">
@@ -51,10 +47,10 @@ function MySkills() {
             </p>
           </div>
 
-          <SkillCard icon="fa-brands fa-react" />
-          <SkillCard icon="devicon-tailwindcss-original" />
-          <SkillCard icon="fa-brands fa-python" />
-          <SkillCard icon="devicon-django-plain-wordmark" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+          <SkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
         </div>
 
         <div
@@ -66,13 +62,13 @@ function MySkills() {
           </h2>
 
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-            <AdditionalSkillCard icon="fa-brands fa-figma" />
-            <AdditionalSkillCard icon="devicon-postgresql-plain" />
-            <AdditionalSkillCard icon="devicon-azuresqldatabase-plain" />
-            <AdditionalSkillCard icon="fa-brands fa-github" />
-            <AdditionalSkillCard icon="fa-brands fa-java" />
-            <AdditionalSkillCard icon="devicon-photoshop-plain" />
-            <AdditionalSkillCard icon="devicon-illustrator-plain" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
+            <AdditionalSkillCard link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" />
           </div>
         </div>
       </div>

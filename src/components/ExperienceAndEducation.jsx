@@ -39,19 +39,19 @@ function ExperienceAndEducation() {
             <TitleExperience title="My Experiences" icon="briefcase" />
             <div className="experience-card mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-20 flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10">
               <CardExperience
+                date="May 2024 - Present"
+                title="Web developer Intern"
+                company="Ministry of Post and Telecommunications"
+              />
+              <CardExperience
                 date="Jan 2025 - Present"
                 title="#Mbassador Programme"
-                company="Maybank"
+                company="Maybank Cambodia"
               />
               <CardExperience
                 date="Nov 2024 - Present"
                 title="Student Employee"
                 company="American University of Phnom Penh"
-              />
-              <CardExperience
-                date="Sep 2024 - Present"
-                title="Public Affair Committee"
-                company="Student Government Association"
               />
             </div>
           </div>

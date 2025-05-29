@@ -75,7 +75,7 @@ function Projects() {
 
           <ProjectCard
             title="Blog Application"
-            description="A blog application that allows users to create, read, update, and delete blog posts. It features user authentication, a responsive design, and a clean user interface. The application is built using Node.js, Express, React, and PostgreSQL."
+            description="A blog application that allows users to create, read, update, and delete blog posts. It features user authentication, a responsive design, a clean user interface, and an admin page for managing posts and users. The application is built using Node.js, Express, React, and PostgreSQL."
             image={Blog}
             tech={["Node JS", "React JS", "Tailwind CSS", "PostgreSQL"]}
             imageOnLeft={false}
